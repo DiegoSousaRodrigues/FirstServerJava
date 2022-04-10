@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<body style="background-color: #aaa">
+	<h:form>
+		<p:card style="width: 25em; margin: 1em auto">
+			<f:facet name="title">Criar Conta</f:facet>
+			<div class="ui-fluid">
+				<div class="p-field">
+					<label for="name">Nome</label>
+					<p:inputText id="name" type="text" placeholder="Seu nome"/>
+				</div>
+				<div class="p-field">
+					<label for="description">Data Nascimento</label>
+					<p:inputText id="description" type="date" />
+				</div>
+				<div class="p-field">
+					<label for="email">E-mail</label>
+					<p:inputText id="email" type="email" placeholder="nome@dominio.com" />
+				</div>
+				<div class="p-field">
+					<label for="password">Senha</label>
+					<p:inputText id="password" type="password" placeholder="Mudar123!" />
+				</div>
+			</div>
+			<f:facet name="footer">
+				<p:commandButton icon="pi pi-check" value="Save"/>
+				<p:commandButton icon="pi pi-times" value="Cancel" type="reset"
+					styleClass="ui-button-secondary" style="margin-left: .5em" />
+			</f:facet>
+		</p:card>
+	</h:form>
+</body>
+</html>
